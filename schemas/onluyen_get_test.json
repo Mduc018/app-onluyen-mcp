@@ -1,0 +1,25 @@
+{
+  "name": "onluyen_get_test",
+  "description": "Tải đề bài và danh sách câu hỏi. Mặc định trả về định dạng compact (loại bỏ HTML thừa).",
+  "parameters": {
+    "properties": {
+      "assign_id": {
+        "description": "Mã assignId của bài tập cần làm",
+        "type": "string"
+      },
+      "format": {
+        "default": "compact",
+        "description": "Định dạng câu hỏi trả về: compact (mặc định) hoặc full.",
+        "enum": [
+          "compact",
+          "full"
+        ],
+        "type": "string"
+      }
+    },
+    "required": [
+      "assign_id"
+    ],
+    "type": "object"
+  }
+}
